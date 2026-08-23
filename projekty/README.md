@@ -1,0 +1,1 @@
+Větší samostatné práce
