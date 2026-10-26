@@ -29,4 +29,26 @@
   - 127.0.0.1 - loopback (já)
   - 0.0.0.0 - zástupná adresa (jakákoliv adresa, všechny)
   - 169.254.x.x - APIPA (bez DHCP)
-## Subneting
+### Subneting
+#### VLSM
+- různé velikosti podsítí
+- každá podsít má jinou masku dle potřeby
+- efektivnější využití adresního prostoru
+### ICMPv4
+- protokol sítové vrstvy pro hlášení chyb a diagnostiku
+### DHCPv4
+#### Proces DORA - získání IP adresy
+- DHCP server přiděluje:
+  - IP adresu (pronajatá na omezenou dobu)
+  - masku
+  - výchozí bránu
+  - DNS server
+#### DhCP Relay 
+- DHCP broadcast neprojde přes router
+- Relay agent na routru přeposílá dotazy na centrální DHCP server
+- řešení pro sítě s více podsítěmi
+- bezpečnost:
+    - DHCP Starvation - vyčerpání fondu adres (DoS)
+    - Rogue DHCP - podvodný server - MITM útok
+        - obrana: DHCP Snooping
+## Adresace IPv6
