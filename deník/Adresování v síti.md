@@ -51,4 +51,3 @@
     - DHCP Starvation - vyčerpání fondu adres (DoS)
     - Rogue DHCP - podvodný server - MITM útok
         - obrana: DHCP Snooping
-## Adresace IPv6
